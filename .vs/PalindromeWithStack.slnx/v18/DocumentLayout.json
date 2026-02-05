@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PalindromeWithStack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0BF1D1-4A53-47E5-9097-1A2B0AD9D1BE}|PalindromeWithStack\\PalindromeWithStack.csproj|c:\\palindromewithstack\\palindromewithstack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0BF1D1-4A53-47E5-9097-1A2B0AD9D1BE}|PalindromeWithStack\\PalindromeWithStack.csproj|solutionrelative:palindromewithstack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0BF1D1-4A53-47E5-9097-1A2B0AD9D1BE}|PalindromeWithStack\\PalindromeWithStack.csproj|c:\\palindromewithstack\\palindromewithstack\\palindromestack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0BF1D1-4A53-47E5-9097-1A2B0AD9D1BE}|PalindromeWithStack\\PalindromeWithStack.csproj|solutionrelative:palindromewithstack\\palindromestack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PalindromeStack.cs",
+              "DocumentMoniker": "C:\\PalindromeWithStack\\PalindromeWithStack\\PalindromeStack.cs",
+              "RelativeDocumentMoniker": "PalindromeWithStack\\PalindromeStack.cs",
+              "ToolTip": "C:\\PalindromeWithStack\\PalindromeWithStack\\PalindromeStack.cs",
+              "RelativeToolTip": "PalindromeWithStack\\PalindromeStack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T20:45:45.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\PalindromeWithStack\\PalindromeWithStack\\Program.cs",
+              "RelativeDocumentMoniker": "PalindromeWithStack\\Program.cs",
+              "ToolTip": "C:\\PalindromeWithStack\\PalindromeWithStack\\Program.cs",
+              "RelativeToolTip": "PalindromeWithStack\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T20:43:11.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

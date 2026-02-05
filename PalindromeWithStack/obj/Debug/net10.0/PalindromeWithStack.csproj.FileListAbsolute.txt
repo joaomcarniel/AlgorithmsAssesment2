@@ -1,0 +1,14 @@
+C:\PalindromeWithStack\PalindromeWithStack\bin\Debug\net10.0\PalindromeWithStack.exe
+C:\PalindromeWithStack\PalindromeWithStack\bin\Debug\net10.0\PalindromeWithStack.deps.json
+C:\PalindromeWithStack\PalindromeWithStack\bin\Debug\net10.0\PalindromeWithStack.runtimeconfig.json
+C:\PalindromeWithStack\PalindromeWithStack\bin\Debug\net10.0\PalindromeWithStack.dll
+C:\PalindromeWithStack\PalindromeWithStack\bin\Debug\net10.0\PalindromeWithStack.pdb
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.GeneratedMSBuildEditorConfig.editorconfig
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.AssemblyInfoInputs.cache
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.AssemblyInfo.cs
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.csproj.CoreCompileInputs.cache
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.dll
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\refint\PalindromeWithStack.dll
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.pdb
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\PalindromeWithStack.genruntimeconfig.cache
+C:\PalindromeWithStack\PalindromeWithStack\obj\Debug\net10.0\ref\PalindromeWithStack.dll
