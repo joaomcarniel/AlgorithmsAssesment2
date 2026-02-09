@@ -4,15 +4,15 @@ class Program
 {
     static void Main()
     {
-        PalindromeStack stack = new PalindromeStack();
         while (true)
         {
+            PalindromeStack stack = new PalindromeStack();
             Console.WriteLine("=******=");
             Console.WriteLine("=******=");
             Console.WriteLine("Welcome to the Palindrome Checker Program");
             Console.WriteLine("Write a word: ");
             var word = Console.ReadLine();
-            if (word != null)
+            if (!string.IsNullOrWhiteSpace(word))
             {
                 word = word.ToLower();
                 foreach (char i in word)
@@ -25,10 +25,7 @@ class Program
             }
 
             Console.WriteLine("Close Program? [y/n]");
-            if(Console.ReadLine() == "y")
-            {
-                break;
-            }
+            if (Console.ReadLine() == "y") break;
         }
     }
 }
