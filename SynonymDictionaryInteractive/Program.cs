@@ -1,7 +1,7 @@
-﻿//João Marcos Carniel (20082653)
-// Alba
+﻿// João Marcos Carniel (20082653)
+// Alba Ciardini Utiel (20056357)
 
-// Insertion Complexity: O(1) average per word
+// Insertion: O(1) average per word
 // Search by key: O(1)
 // Search by synonym: O(n * m) where n = number of words, m = synonyms per word
 // Sorting synonyms: O(m log m)
@@ -10,22 +10,28 @@ class Program
 {
     static void Main()
     {
-
         Dictionary<string, List<string>> synonymDict = new Dictionary<string, List<string>>();
 
-
+        // Read 5 words with 4 synonyms each
         for (int i = 1; i <= 5; i++)
         {
-            Console.WriteLine("Word " + i);
+            Console.WriteLine($"Word {i}");
             Console.Write("Enter a word: ");
             string word = (Console.ReadLine() ?? string.Empty).ToLower();
+
+            if (synonymDict.ContainsKey(word))
+            {
+                Console.WriteLine("This word already exists. Skipping...\n");
+                i--;
+                continue;
+            }
 
             List<string> synonyms = new List<string>();
 
             for (int j = 1; j <= 4; j++)
             {
-                Console.Write("Enter synonym " + j + ": ");
-                string synonym = Console.ReadLine() ?? string.Empty;
+                Console.Write($"Enter synonym {j}: ");
+                string synonym = (Console.ReadLine() ?? string.Empty).ToLower();
                 synonyms.Add(synonym);
             }
 
@@ -33,73 +39,35 @@ class Program
             Console.WriteLine();
         }
 
-
         Console.WriteLine("All words in the dictionary:");
         foreach (string key in synonymDict.Keys)
         {
             Console.WriteLine(key);
         }
 
-
-        Console.WriteLine("\nEnter a word to find its synonyms:");
-        string searchWord = (Console.ReadLine() ?? string.Empty).ToLower();
-
-
-        if (synonymDict.ContainsKey(searchWord))
+        while (true)
         {
-            List<string> foundSynonyms = synonymDict[searchWord];
+            Console.Write("\nEnter a word to find its synonyms: ");
+            string searchWord = (Console.ReadLine() ?? string.Empty).ToLower();
 
-
-            foundSynonyms.Sort();
-
-            Console.WriteLine("\nSynonyms for '" + searchWord + "' (sorted):");
-            foreach (string syn in foundSynonyms)
+            if (synonymDict.ContainsKey(searchWord))
             {
-                Console.WriteLine(syn);
-            }
-        }
-        else
-        {
-            bool foundAsSynonym = false;
-            string originalWord = "";
+                var foundSynonyms = synonymDict[searchWord].OrderBy(s => s).ToList();
 
-            foreach (string key in synonymDict.Keys)
-            {
-                List<string> syns = synonymDict[key];
-                foreach (string syn in syns)
+                Console.WriteLine($"\nSynonyms for '{searchWord}' (sorted):");
+                foreach (string syn in foundSynonyms)
                 {
-                    if (syn.ToLower() == searchWord)
-                    {
-                        foundAsSynonym = true;
-                        originalWord = key;
-                        break;
-                    }
-                }
-                if (foundAsSynonym)
-                    break;
-            }
-
-            if (foundAsSynonym)
-            {
-                Console.WriteLine("\n'" + searchWord + "' is a synonym of '" + originalWord + "'");
-                Console.WriteLine("\nOriginal word: " + originalWord);
-                Console.WriteLine("Other synonyms:");
-
-                List<string> otherSynonyms = synonymDict[originalWord];
-                otherSynonyms.Sort();
-
-                foreach (string syn in otherSynonyms)
-                {
-                    if (syn.ToLower() != searchWord)
-                    {
-                        Console.WriteLine(syn);
-                    }
+                    Console.WriteLine(syn);
                 }
             }
             else
             {
                 Console.WriteLine("Word not found in the dictionary.");
             }
+            Console.WriteLine("Would you like to try again? [y/n]");
+            string choice = Console.ReadLine()?.ToLower();
+
+            if (choice == "n") break;
         }
     }
 }

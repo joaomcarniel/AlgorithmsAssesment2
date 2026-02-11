@@ -1,5 +1,5 @@
-﻿//João Marcos Carniel (20082653)
-// Alba
+﻿// João Marcos Carniel (20082653)
+// Alba Ciardini Utiel (20056357)
 
 // Time Complexity: O(n) — each character is pushed and popped once
 // Space Complexity: O(n) — stack stores n characters
