@@ -1,8 +1,15 @@
 ﻿// João Marcos Carniel (20082653)
 // Alba Ciardini Utiel (20056357)
 
-// Time Complexity: O(n) — each character is pushed and popped once
-// Space Complexity: O(n) — stack stores n characters
+/* 
+Complexity Explanation:
+ 
+This program uses a stack<char> to store the letters of a typed word
+
+- Time Complexity: O(n) — each character is pushed and popped once
+- Space Complexity: O(n) — stack stores n characters. There is no extra structure instantiated in runtime execution
+
+*/
 class Program
 {
     static void Main()
@@ -17,10 +24,7 @@ class Program
             var word = Console.ReadLine() ?? string.Empty;
 
             // this operation deletes empty spaces, punctuation and ignore case
-            string preparedWord = new string(word
-                .Where(char.IsLetterOrDigit)
-                .ToArray())
-                .ToLower();
+            string preparedWord = PrepareWord(word);
 
             //This bool variable stores the answer if the word is a palindrome or not
             bool isPalindrome = IsPalindrome(preparedWord);
@@ -31,6 +35,14 @@ class Program
             Console.WriteLine("Close Program? [y/n]");
             if (Console.ReadLine() == "y") break;
         }
+    }
+
+    static string PrepareWord(string word)
+    {
+        return new string(word
+                .Where(char.IsLetterOrDigit)
+                .ToArray())
+                .ToLower();
     }
 
     static bool IsPalindrome(string word)
