@@ -6,11 +6,14 @@ Complexity Explanation:
 
 This program uses a Dictionary<string, List<string>> to store words and their synonyms.
 
-- Inserting a word into the dictionary has an average time complexity of O(1), because Dictionary is implemented using a hash table.
+- Inserting a word into the dictionary has an average time complexity of O(1),
+    because Dictionary is implemented using a hash table.
 - Searching for a word by key also runs in O(1) average time.
 - Sorting the list of synonyms takes O(m log m), where m is the number of synonyms for a given word.
-- If we had to search for a word inside all synonym lists, the complexity would be O(n * m), where n is the number of words and m is the number of synonyms per word.
+- If we had to search for a word inside all synonym lists, the complexity would be O(n * m), 
+    where n is the number of words and m is the number of synonyms per word.
 
+In this program, n = 5 (words) and m = 4 (synonyms), so the operations are very efficient for the given input size.
 */
 
 

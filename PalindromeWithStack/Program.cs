@@ -1,14 +1,44 @@
 ﻿// João Marcos Carniel (20082653)
 // Alba Ciardini Utiel (20056357)
 
-/* 
+/*
 Complexity Explanation:
- 
-This program uses a stack<char> to store the letters of a typed word
 
-- Time Complexity: O(n) — each character is pushed and popped once
-- Space Complexity: O(n) — stack stores n characters. There is no extra structure instantiated in runtime execution
+This program checks whether a word or sentence is a palindrome using a Stack<char>.
 
+Step 1 – Preparing the word:
+The method PrepareWord removes spaces and punctuation using:
+    .Where(char.IsLetterOrDigit)
+and then converts everything to lowercase.
+
+This operation scans each character of the string once.
+If the word has n characters, this step runs in O(n) time.
+
+Step 2 – Pushing characters into the stack:
+In the IsPalindrome method, each character of the prepared word is pushed into a stack.
+Since we push n characters, this operation takes O(n) time.
+
+Step 3 – Comparing characters:
+We iterate through the word again and pop one character from the stack for each letter.
+Each pop operation is O(1), and we perform it n times.
+Therefore, this step also runs in O(n) time.
+
+Overall Time Complexity:
+O(n) + O(n) + O(n) = O(n)
+
+Even though we run the loop many times, they are sequential operations,
+so the total complexity remains linear.
+
+Space Complexity:
+The stack stores all n characters of the word.
+Therefore, the extra space required is O(n).
+
+There are no additional complex data structures created during execution,
+only the stack and the prepared string.
+
+Conclusion:
+The algorithm is efficient because its time grows linearly
+with the size of the input string.
 */
 class Program
 {
